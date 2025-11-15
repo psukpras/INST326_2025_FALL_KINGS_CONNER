@@ -287,3 +287,22 @@ print(f"p2 score:{p2_score}")
 win_condition(p1_score, p2_score) #no winner since only one round was played
 
 """Edit by Attowla"""
+def build_board(rows, cols):
+    """
+    Laying out the initial board.
+
+    Args:
+        rows (int): Amount of rows in each board
+        cols (int): Amount of columns in each board
+
+    Returns:
+        _type_: _description_
+    """
+    board = [["example card" for _ in range(cols)] for _ in range(rows)]
+    return board
+
+board = build_board(3, 3)
+
+for row in board:
+    print(" ".join(row))
+
