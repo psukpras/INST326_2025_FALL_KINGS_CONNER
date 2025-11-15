@@ -40,16 +40,7 @@ def get_player_move_choice():
 
 def try_play_card(player_hand, play_piles):
     """Mock function to attempt playing a card from hand to a pile"""
-    # In final implementation, this would handle card placement logic
-    if player_hand:  # If player has cards
-        card = player_hand.pop(0)  # Remove first card
-        # Find an empty king's corner or regular pile to place card
-        for pile_name, pile_cards in play_piles.items():
-            if not pile_cards:  # Empty pile
-                play_piles[pile_name].append(card)
-                print(f"Played {card} on pile {pile_name}")
-                return True
-    return False
+    return True
 
 def try_move_pile(play_piles):
     """Mock function to attempt moving one pile onto another"""
