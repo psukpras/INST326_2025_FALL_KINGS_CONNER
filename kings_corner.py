@@ -10,7 +10,7 @@ def player_turn(player_hand, play_piles, draw_pile):
         draw_pile: List representing the draw pile
     
     Returns:
-        tuple: (updated_player_hand, updated_play_piles, updated_draw_pile, turn_completed)
+        tuple: (player_hand, play_piles, draw_pile, turn_completed)
     """
     turn_completed = False
     if not turn_completed:
