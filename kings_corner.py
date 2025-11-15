@@ -73,6 +73,11 @@ def valid_moves(hand, card_to_play, piles, move_from = None, move_to = None):
             
     Returns:
         str : a message indicating whether the move is valid or invalid.
+        
+    Side effects:
+        - Print updates to the console.
+        - Modifies the 'hand' list when a card is successfully play.
+        _ Modifies the 'piles' dictionary when a card or stack is moved.
     '''
     # Rank order from high to low
     rank_order = ['K', 'Q', 'J', 10, 9, 8, 7, 6, 5, 4, 3, 2, 'A']
